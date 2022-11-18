@@ -11,10 +11,10 @@ function catName() {
 }
 
 
-function displayRating() {
+function guessmycats() {
 
     let output = '';
-    let rating = prompt('scale of 1-5, how many stars?');
+    let rating = prompt('How many cats do you think I have?');
     for(let i = 0; i < rating; i++){
     output += "<img class='catpic' src='catphoto.jpg' alt='cute kitty'/>";
     }
@@ -22,20 +22,6 @@ function displayRating() {
     return document.write(output);
 }
 
-
-
-// function guesscat() {
-//     let answer;
-
-//     while (answer = "ragdoll") {
-//         answer = prompt('Do you have a ragdoll cat');
-//         if (answer =="Yes") {
-//             alert("You are cool");
-//         } else {
-//             alert("You are not cool");
-//         }
-//     }
-// }
 
 
 function likecats() {
@@ -75,4 +61,4 @@ function howmanycats() {
 catName()
 likecats()
 howmanycats()
-displayRating() 
+guessmycats() 
